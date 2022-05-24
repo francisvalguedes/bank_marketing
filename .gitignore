@@ -130,3 +130,5 @@ dmypy.json
 
 #incluidos pelo aluno
 wandb/
+desktop.ini
+backup/
