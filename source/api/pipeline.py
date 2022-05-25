@@ -46,38 +46,31 @@ class CategoricalTransformer(BaseEstimator, TransformerMixin):
         # customize feature?
         # How can I identify what needs to be modified? EDA!!!!
         if self.new_features:
+            # df['job'] = df['job']
+            # Combine similar jobs into categiroes
+            df['job'] = df['job'].replace(['management', 'admin.'], 'white-collar')
+            df['job'] = df['job'].replace(['services','housemaid'], 'pink-collar')
+            df['job'] = df['job'].replace(['retired', 'student', 'unemployed', 'unknown'], 'other')
 
-            # minimize the cardinality of native_country feature
-            # check cardinality using df.native_country.unique()
-            df.loc[df['native_country'] != 'United-States','native_country'] = 'non_usa'
+            # minimize the cardinality poutcome
+            df['poutcome'] = df['poutcome'].replace(['other'] , 'unknown')
+
+            # Drop 'contact', as every participant has been contacted. 
+            # df.drop('contact', axis=1, inplace=True)
+
+            # day  : last contact day of the month
+            # month: last contact month of year
+            # Drop 'month' as they don't have any intrinsic meaning
+            # df.drop('month', axis=1, inplace=True)
+            # df['month'] = df['month'].replace(['feb', 'mar', 'jan'], '1st')
+            # df['month'] = df['month'].replace(['may', 'jun', 'apr'], '2st')
+            # df['month'] = df['month'].replace(['jul', 'aug', 'sep'], '3st')
+            # df['month'] = df['month'].replace(['nov', 'oct', 'dec'], '4st')
 
             # replace ? with Unknown
-            edit_cols = ['native_country', 'occupation', 'workclass']
-            for col in edit_cols:
-                df.loc[df[col] == '?', col] = 'unknown'
-
-            # decrease the cardinality of education feature
-            hs_grad = ['HS-grad', '11th', '10th', '9th', '12th']
-            elementary = ['1st-4th', '5th-6th', '7th-8th']
-            # replace
-            df['education'].replace(to_replace=hs_grad,value='HS-grad',inplace=True)
-            df['education'].replace(to_replace=elementary,value='elementary_school',inplace=True)
-
-            # adjust marital_status feature
-            married = ['Married-spouse-absent','Married-civ-spouse','Married-AF-spouse']
-            separated = ['Separated', 'Divorced']
-
-            # replace
-            df['marital_status'].replace(to_replace=married, value='Married', inplace=True)
-            df['marital_status'].replace(to_replace=separated, value='Separated', inplace=True)
-
-            # adjust workclass feature
-            self_employed = ['Self-emp-not-inc', 'Self-emp-inc']
-            govt_employees = ['Local-gov', 'State-gov', 'Federal-gov']
-
-            # replace elements in list.
-            df['workclass'].replace(to_replace=self_employed,value='Self_employed',inplace=True)
-            df['workclass'].replace(to_replace=govt_employees,value='Govt_employees',inplace=True)
+            # edit_cols = ['job', 'month']
+            # for col in edit_cols:
+            #     df.loc[df[col] == '?', col] = 'unknown'            
 
         # update column names
         self.colnames = df.columns
@@ -116,6 +109,19 @@ class NumericalTransformer(BaseEstimator, TransformerMixin):
     # Use fitted scalers
     def transform(self, X, y=None):
         df = pd.DataFrame(X, columns=self.colnames)
+
+        # day  : last contact day of the month                  # adicionado
+        # Drop 'day' as they don't have any intrinsic meaning
+        # df.drop('day', axis=1, inplace=True)
+
+        # Map padys=-1 into a large value (10000 is used) to indicate that it is so far in the past that it has no effect
+        # df.loc[df['pdays'] == -1, 'pdays'] = 10000
+
+        # # Create a new column: recent_pdays 
+        # df['recent_pdays'] = np.where(df['pdays'], 1/df.pdays, 1/df.pdays)
+
+        # # Drop 'pdays'
+        # df.drop('pdays', axis=1, inplace = True)
 
         # update columns name
         self.colnames = df.columns.tolist()

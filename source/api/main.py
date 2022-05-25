@@ -20,10 +20,10 @@ setattr(sys.modules["__main__"], "CategoricalTransformer", CategoricalTransforme
 setattr(sys.modules["__main__"], "NumericalTransformer", NumericalTransformer)
 
 # name of the model artifact
-artifact_model_name = "decision_tree/model_export:latest"
+artifact_model_name = "mlops_ivan/decision_tree_bank/model_export:latest"
 
 # initiate the wandb project
-run = wandb.init(project="decision_tree",job_type="api")
+run = wandb.init(project="decision_tree_bank", entity="mlops_ivan",job_type="api")
 
 # create the api
 app = FastAPI()
@@ -31,38 +31,42 @@ app = FastAPI()
 # declare request example data using pydantic
 # a person in our dataset has the following attributes
 class Person(BaseModel):
-    age: int
-    workclass: str
-    fnlwgt: int
-    education: str
-    education_num: int
-    marital_status: str
-    occupation: str
-    relationship: str
-    race: str
-    sex: str
-    capital_gain: int
-    capital_loss: int
-    hours_per_week: int
-    native_country: str
+    age       :  int 
+    job       :  str
+    marital   :  str
+    education :  str
+    default   :  str
+    balance   :  int 
+    housing   :  str
+    loan      :  str
+    contact   :  str
+    day       :  int 
+    month     :  str
+    duration  :  int 
+    campaign  :  int 
+    pdays     :  int 
+    previous  :  int 
+    poutcome  :  str
 
     class Config:
         schema_extra = {
             "example": {
-                "age": 72,
-                "workclass": 'Self-emp-inc',
-                "fnlwgt": 473748,
-                "education": 'Some-college',
-                "education_num": 10,
-                "marital_status": 'Married-civ-spouse',
-                "occupation": 'Exec-managerial',
-                "relationship": 'Husband',
-                "race": 'White',
-                "sex": 'Male',
-                "capital_gain": 0,
-                "capital_loss": 0,
-                "hours_per_week": 25,
-                "native_country": 'United-States'
+                "age"       :  58,
+                "job"       :  "management",
+                "marital"   :  "married",
+                "education" :  "tertiary",
+                "default"   :  "no",
+                "balance"   :  2143,
+                "housing"   :  "yes",
+                "loan"      :  "no",
+                "contact"   :  "unknown",
+                "day"       :  5, 
+                "month"     :  "may",
+                "duration"  :  261, 
+                "campaign"  :  1, 
+                "pdays"     :  -1, 
+                "previous"  :  0, 
+                "poutcome"  :  "unknown"
             }
         }
 
@@ -93,4 +97,4 @@ async def get_inference(person: Person):
     # Predict test data
     predict = pipe.predict(df)
 
-    return "low income <=50K" if predict[0] <= 0.5 else "high income >50K"
+    return "no" if predict[0] <= 0.5 else "yes"

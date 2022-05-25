@@ -19,52 +19,56 @@ def test_root():
 
 # a unit test that tests the status code and response 
 # for an instance with a low income
-def test_get_inference_low_income():
+def test_get_inference_no():
 
     person = {
-        "age": 72,
-        "workclass": 'Self-emp-inc',
-        "fnlwgt": 473748,
-        "education": 'Some-college',
-        "education_num": 10,
-        "marital_status": 'Married-civ-spouse',
-        "occupation": 'Exec-managerial',
-        "relationship": 'Husband',
-        "race": 'White',
-        "sex": 'Male',
-        "capital_gain": 0,
-        "capital_loss": 0,
-        "hours_per_week": 25,
-        "native_country": 'United-States'
+        "age"       :  58,
+        "job"       :  "management",
+        "marital"   :  "married",
+        "education" :  "tertiary",
+        "default"   :  "no",
+        "balance"   :  2143,
+        "housing"   :  "yes",
+        "loan"      :  "no",
+        "contact"   :  "unknown",
+        "day"       :  5, 
+        "month"     :  "may",
+        "duration"  :  261, 
+        "campaign"  :  1, 
+        "pdays"     :  -1, 
+        "previous"  :  0, 
+        "poutcome"  :  "unknown"
     }
 
     r = client.post("/predict", json=person)
     # print(r.json())
     assert r.status_code == 200
-    assert r.json() == "low income <=50K"
+    assert r.json() == "no"
 
 # a unit test that tests the status code and response 
 # for an instance with a high income
-def test_get_inference_high_income():
+def test_get_inference_yes():
 
     person = {
-        "age": 46,
-        "workclass": 'Private',
-        "fnlwgt": 364548,
-        "education": 'Bachelors',
-        "education_num": 13,
-        "marital_status": 'Divorced',
-        "occupation": 'Sales',
-        "relationship": 'Not-in-family',
-        "race": 'White',
-        "sex": 'Male',
-        "capital_gain": 8614,
-        "capital_loss": 0,
-        "hours_per_week": 40,
-        "native_country": 'United-States'
+        "age"       :  53,
+        "job"       :  "management",
+        "marital"   :  "married",
+        "education" :  "tertiary",
+        "default"   :  "no",
+        "balance"   :  583,
+        "housing"   :  "no",
+        "loan"      :  "no",
+        "contact"   :  "cellular",
+        "day"       :  17, 
+        "month"     :  "nov",
+        "duration"  :  226, 
+        "campaign"  :  1, 
+        "pdays"     :  184, 
+        "previous"  :  4, 
+        "poutcome"  :  "success"
     }
 
     r = client.post("/predict", json=person)
     print(r.json())
     assert r.status_code == 200
-    assert r.json() == "high income >50K"
+    assert r.json() == "yes"
