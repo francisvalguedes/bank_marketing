@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-26T13:07:09.274514",
+    "startedAt": "2022-05-26T13:07:05.555729",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "source.api.main:app"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Francisval\\.conda\\envs\\colab2deploy\\Scripts\\uvicorn-script.py",
+    "codePath": "..\\..\\.conda\\envs\\colab2deploy\\Scripts\\uvicorn-script.py",
+    "git": {
+        "remote": "https://github.com/francisvalguedes/bank_marketing",
+        "commit": "14c7bfb143cebf711f09613bda99fce14259f04f"
+    },
+    "email": "francisval.guedes.soares.037@ufrn.edu.br",
+    "root": "C:/Users/Francisval/Rep/bank_marketing",
+    "host": "DESKTOP-VV4POG5",
+    "username": "Francisval",
+    "executable": "C:\\Users\\Francisval\\.conda\\envs\\colab2deploy\\python.exe"
+}

@@ -129,6 +129,5 @@ dmypy.json
 .pyre/
 
 #incluidos pelo aluno
-wandb/
 desktop.ini
 backup/
