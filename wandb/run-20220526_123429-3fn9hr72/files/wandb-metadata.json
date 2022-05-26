@@ -1,0 +1,26 @@
+{
+    "os": "Windows-10-10.0.22000-SP0",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-05-26T15:34:33.517128",
+    "startedAt": "2022-05-26T15:34:29.604577",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "source/api",
+        "-vv",
+        "-s"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Francisval\\.conda\\envs\\colab2deploy\\Scripts\\pytest-script.py",
+    "codePath": "..\\..\\.conda\\envs\\colab2deploy\\Scripts\\pytest-script.py",
+    "git": {
+        "remote": "https://github.com/francisvalguedes/bank_marketing",
+        "commit": "ab8f5f274e3d526aaaace28cbcca4a6b4da454e1"
+    },
+    "email": "francisval.guedes.soares.037@ufrn.edu.br",
+    "root": "C:/Users/Francisval/Rep/bank_marketing",
+    "host": "DESKTOP-VV4POG5",
+    "username": "Francisval",
+    "executable": "C:\\Users\\Francisval\\.conda\\envs\\colab2deploy\\python.exe"
+}
