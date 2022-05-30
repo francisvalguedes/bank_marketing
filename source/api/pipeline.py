@@ -62,21 +62,16 @@ class CategoricalTransformer(BaseEstimator, TransformerMixin):
             # month: last contact month of year
             # Drop 'month' as they don't have any intrinsic meaning
             # df.drop('month', axis=1, inplace=True)
-            # df['month'] = df['month'].replace(['feb', 'mar', 'jan'], '1st')
-            # df['month'] = df['month'].replace(['may', 'jun', 'apr'], '2st')
-            # df['month'] = df['month'].replace(['jul', 'aug', 'sep'], '3st')
-            # df['month'] = df['month'].replace(['nov', 'oct', 'dec'], '4st')
-
-            # replace ? with Unknown
-            # edit_cols = ['job', 'month']
-            # for col in edit_cols:
-            #     df.loc[df[col] == '?', col] = 'unknown'            
+            df['month'] = df['month'].replace(['feb', 'mar', 'jan'], '1st')
+            df['month'] = df['month'].replace(['may', 'jun', 'apr'], '2st')
+            df['month'] = df['month'].replace(['jul', 'aug', 'sep'], '3st')
+            df['month'] = df['month'].replace(['nov', 'oct', 'dec'], '4st')         
 
         # update column names
         self.colnames = df.columns
 
         return df
-        
+
 # transform numerical features
 class NumericalTransformer(BaseEstimator, TransformerMixin):
     # Class constructor method that takes a model parameter as its argument
@@ -115,13 +110,7 @@ class NumericalTransformer(BaseEstimator, TransformerMixin):
         # df.drop('day', axis=1, inplace=True)
 
         # Map padys=-1 into a large value (10000 is used) to indicate that it is so far in the past that it has no effect
-        # df.loc[df['pdays'] == -1, 'pdays'] = 10000
-
-        # # Create a new column: recent_pdays 
-        # df['recent_pdays'] = np.where(df['pdays'], 1/df.pdays, 1/df.pdays)
-
-        # # Drop 'pdays'
-        # df.drop('pdays', axis=1, inplace = True)
+        df.loc[df['pdays'] == -1, 'pdays'] = 10000
 
         # update columns name
         self.colnames = df.columns.tolist()
