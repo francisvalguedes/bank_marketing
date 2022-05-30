@@ -74,11 +74,18 @@ class Person(BaseModel):
 @app.get("/", response_class=HTMLResponse)
 async def root():
     return """
-    <p><span style="font-size:28px"><strong>Hello World</strong></span></p>"""\
-    """<p><span style="font-size:20px">In this project, we will apply the skills """\
-        """acquired in the Deploying a Scalable ML Pipeline in Production course to develop """\
-        """a classification model on publicly available"""\
-        """<a href="http://archive.ics.uci.edu/ml/datasets/Adult"> Census Bureau data</a>.</span></p>"""
+    <p><span style="font-size:28px"><strong>Bank Marketing</strong></span></p>"""\
+    """<p><span style="font-size:20px">The data is related with direct marketing campaigns of"""\
+        """ a Portuguese banking institution. The marketing campaigns were based on phone calls."""\
+        """ Often, more than one contact to the same client was required, in order to access if the"""\
+        """ product (bank term deposit) would be ('yes') or not ('no') subscribed. """\
+        """ the classification model on publicly available:"""\
+        """<a href="http://archive.ics.uci.edu/ml/datasets/Bank+Marketing"> Bank Marketing</a>.</span></p>"""\
+        """<a href="https://github.com/francisvalguedes/bank_marketing.git"> bank_marketing repository</a>.</span></p>"""\
+        """ The classification goal is to predict if the client will subscribe (yes/no) a term deposit (variable y)."""\
+        """ you can access and test the API from the link below:"""\
+        """ <a href="http://archive.ics.uci.edu/ml/datasets/Bank+Marketing"> documentation</a>.</span></p>"""
+
 
 # run the model inference and use a Person data structure via POST to the API.
 @app.post("/predict")
