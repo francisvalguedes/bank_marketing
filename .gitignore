@@ -131,3 +131,5 @@ dmypy.json
 #incluidos pelo aluno
 desktop.ini
 backup/
+wandb/
+train.csv
