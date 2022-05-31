@@ -26,8 +26,11 @@ jobs:
           # Version range or exact version of a Python version to use, using SemVer's version range syntax.
           python-version: 3.8
       
+      - name: Install pip
+        run: python.exe -m pip install --upgrade pip
+        
       - name: Install dependences
-        run: pip install --upgrade pip && pip install -r requirements.txt
+        run: pip install -r requirements.txt
           
       - name: Login in wandb
         run: 
