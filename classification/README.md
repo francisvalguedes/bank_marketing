@@ -5,7 +5,8 @@ Model cards are a succinct approach for documenting the creation, use, and short
 ## Model Details
 Ivanovitch Silva created the model. A complete data pipeline was built using Google Colab, Scikit-Learn and Weights & Bias to train a Decision Tree model. The big-picture of the data pipeline is shown below:
 
-![image](https://user-images.githubusercontent.com/104702301/171172356-14713f1a-2f8e-4840-8675-451dd82e9157.png)
+![image](https://user-images.githubusercontent.com/104702301/171173276-bc14fbd3-1bb2-4047-9146-4d736264afb2.png)
+
 
 
 For the sake of understanding, a simple hyperparameter-tuning was conducted using a Random Sweep of Wandb, and the hyperparameters values adopted in the train were:
