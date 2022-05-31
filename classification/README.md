@@ -17,13 +17,19 @@ For the sake of understanding, a simple hyperparameter-tuning was conducted usin
 - classifier__random_state: 41
 
 ## Intended Use
-This model is used as a proof of concept for the evaluation of an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages: a) ``fecht data``, b) ``eda``, c) ``preprocess``, d) ``check data``, e) ``segregate``, f) ``train`` and g) ``test``.
+This model is used as a proof of concept for the evaluation of an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
+1 - etl (fetch_data, eda, preprocessing)
+2 - data_check_segregation (data_check e data_segregation)
+3 - train
+4 - test
 
 ## Training Data
 
-The dataset used in this project is based on individual income in the United States. The *data* is from the *1994 census*, and contains information on an individual's ``marital status, age, type of work, and more``. The target column, or what we want to predict, is whether individuals make *less than or equal to 50k a year*, or *more than 50k a year*.
+The dataset is related with direct marketing campaigns of a Portuguese banking institution.
+The *data* is from *May 2008 to November 2010* and contains information on an individual's ``marital, age, education, type of work, and more``.
+The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be *('yes') or not ('no') subscribed*.
 
-You can download the data from the University of California, Irvine's [website](http://archive.ics.uci.edu/ml/datasets/Adult).
+You can download the data from the University of California, Irvine's [website](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
 
 After the EDA stage of the data pipeline, it was noted that the training data is imbalanced when considered the target variable and some features (``sex``, ``race`` and ``workclass``. 
 
