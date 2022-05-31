@@ -49,7 +49,7 @@ The follow results will be shown:
  **Stage [Run]**                        | **Accuracy** | **F1** | **Precision** | **Recall** | 
 ---------------------------------|--------------|--------|---------------|------------|
  Train [distinctive-sweep-7](https://wandb.ai/ivanovitchm/decision_tree/runs/f40ujfaq/overview?workspace=user-ivanovitchm) | 0.8109       | 0.6075 | 0.6075        | 0.6075     |  
- Test [crips-resonance-11](https://wandb.ai/ivanovitchm/decision_tree/runs/1wg7ibyy/overview?workspace=user-ivanovitchm)  | 0.8019       | 0.5899 | 0.5884        | 0.5914     |
+ Test [rich-bush-78](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8019       | 0.5899 | 0.5884        | 0.5914     |
 
 
 ## Ethical Considerations
