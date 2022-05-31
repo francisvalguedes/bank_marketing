@@ -3,7 +3,7 @@
 Model cards are a succinct approach for documenting the creation, use, and shortcomings of a model. The idea is to write a documentation such that a non-expert can understand the model card's contents. For additional information see the Model Card paper: https://arxiv.org/pdf/1810.03993.pdf
 
 ## Model Details
-Ivanovitch Silva created the model. A complete data pipeline was built using Google Colab, Scikit-Learn and Weights & Bias to train a Decision Tree model. The big-picture of the data pipeline is shown below:
+Francisval Guedes and Hareton Gomes created a decision tree model based on Ivanovitch Silva's model. A complete data pipeline was built using Google Colab, Scikit-Learn and Weights & Bias to train a Decision Tree model. The big-picture of the data pipeline is shown below:
 
 ![image](https://user-images.githubusercontent.com/104702301/171173276-bc14fbd3-1bb2-4047-9146-4d736264afb2.png)
 
