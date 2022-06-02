@@ -1,6 +1,6 @@
 """
-Creator: Ivanovitch Silva
-Date: 17 April 2022
+Creator: Francisval G. & Hareton G., Adapted from version: Ivanovitch Silva
+Date: 30 may 2022
 Create API
 """
 # from typing import Union

@@ -1,6 +1,7 @@
 """
+Adapted: Francisval G. Hareton G.
 Creator: Ivanovitch Silva
-Date: 26 April. 2022
+Date: 30 may 2022
 Script that POSTS to the API using the requests 
 module and returns both the result of 
 model inference and the status code
