@@ -2,9 +2,9 @@
 This work is part of the evaluation of theEEC1509 Machine Learning course of the Department of Computer Engineering and Automation Graduate Program in Electrical and Computer Engineering, Federal University of Rio Grande do Norte.
 
 ### Team
- - Supervisor: Prof. Dr. Ivanovitch (www.linkedin.com/in/ivanovitchm)
+ - Supervisor: Prof. Ivanovitch (www.linkedin.com/in/ivanovitchm)
 
- - Developers: Msc. Francisval Guedes ([www.linkedin.com/in/francisval](https://www.linkedin.com/in/francisval-guedes-soares-6094772a)), Msc. Hareton Gomes (www.linkedin.com/in/hareton).
+ - Developers: Francisval Guedes ([www.linkedin.com/in/francisval](https://www.linkedin.com/in/francisval-guedes-soares-6094772a)), Hareton Gomes ([www.linkedin.com/in/hareton](https://www.linkedin.com/in/hareton-ribeiro-gomes-11123a238/)).
 
 ## The data
 The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
@@ -47,7 +47,7 @@ The machine learning model implemented for prediction is the Decision Tree and i
 ## Workflow
 The application uses the workflow shown in BigPicture below. Where is using the artifact stored by the classification model in Wandb and implemented an API from FastAPI. The API is tested with PyTest and deployed with Github Actions making it available on Heroku through automatic CI/CD.
 
-![image](https://user-images.githubusercontent.com/104702301/171174143-3cab4b4f-78c6-4ab4-bb3c-63a4b520ab2c.png)
+![image](https://user-images.githubusercontent.com/104702301/171682951-2522894d-3658-4f96-b659-a1db2e4cc9a7.png)
 
 ## The API
 The API is publicly available to users at the link: [API](https://bank-marketing-data-app.herokuapp.com/)
