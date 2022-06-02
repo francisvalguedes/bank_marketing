@@ -51,6 +51,8 @@ A API está disponibilizada publicamente para teste no link: [API](https://bank-
 
 ## Referencias:
 
+[MITCHELL, Margaret et al. Model Cards for Model Reporting, 2019. Accessed May 30, 2022. Avaliable](https://arxiv.org/abs/1810.03993).
+
 [University of California, Irvine's website](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
 
 [Bank Marketing Data - A Decision Tree Approach](https://www.kaggle.com/code/shirantha/bank-marketing-data-a-decision-tree-approach/notebook).
