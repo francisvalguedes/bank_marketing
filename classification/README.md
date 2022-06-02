@@ -9,12 +9,14 @@ Francisval Guedes and Hareton Gomes created a decision tree model based on Ivano
 
 
 
-For the sake of understanding, a simple hyperparameter-tuning was conducted using a Random Sweep of Wandb, and the hyperparameters values adopted in the train were:
+For the sake of understanding, a simple hyperparameter-tuning was conducted using a Random Sweep of Wandb, and the best hyperparameters values adopted in the train were:
 
-- full_pipeline__num_pipeline__num_transformer__model: 2
+- full_pipeline__num_pipeline__num_transformer__model: 0
 - classifier__criterion: 'entropy'
 - classifier__splitter: 'best'
 - classifier__random_state: 41
+- max_depth: 5
+
 
 ## Intended Use
 This model is used as a proof of concept for the evaluation of an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
@@ -33,9 +35,6 @@ You can download the data from the University of California, Irvine's [website](
 
 After the EDA stage of the data pipeline, it was noted that the training data is imbalanced when considered the target variable and some features (``sex``, ``race`` and ``workclass``. 
 
-
-
-
 ## Evaluation Data
 The dataset under study is split into Train and Test during the ``Segregate`` stage of the data pipeline. 70% of the clean data is used to Train and the remaining 30% to Test. Additionally, 30% of the Train data is used for validation purposes (hyperparameter-tuning). 
 
@@ -48,8 +47,9 @@ The follow results will be shown:
 
  **Stage [Run]**                        | **Accuracy** | **F1** | **Precision** | **Recall** | 
 ---------------------------------|--------------|--------|---------------|------------|
- Train [distinctive-sweep-7](https://wandb.ai/ivanovitchm/decision_tree/runs/f40ujfaq/overview?workspace=user-ivanovitchm) | 0.8109       | 0.6075 | 0.6075        | 0.6075     |  
- Test [crips-resonance-11](https://wandb.ai/ivanovitchm/decision_tree/runs/1wg7ibyy/overview?workspace=user-ivanovitchm)  | 0.8019       | 0.5899 | 0.5884        | 0.5914     |
+ Train [chocolate-sweep-24](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/43pj5775/overview?workspace=user-francisvalfgs) | 0.8991       | 0.4695 | 0.6100        | 0.3816     |  
+ Test [rich-bush-78](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8975       | 0.4466 | 0.6064        | 0.3535     |
+
 
 
 ## Ethical Considerations
