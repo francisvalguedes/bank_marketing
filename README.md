@@ -43,6 +43,7 @@ The machine learning model implemented for prediction is the Decision Tree and i
 
 
 ## Workflow
+The application uses the workflow shown in BigPicture below. Where is using the artifact stored by the classification model in Wandb and implemented an API from FastAPI. The API is tested with PyTest and deployed with Github Actions making it available on Heroku through automatic CI/CD.
 
 ![image](https://user-images.githubusercontent.com/104702301/171174143-3cab4b4f-78c6-4ab4-bb3c-63a4b520ab2c.png)
 
