@@ -45,12 +45,12 @@ The machine learning model implemented for prediction is the Decision Tree and i
 
 ![image](https://user-images.githubusercontent.com/104702301/171174143-3cab4b4f-78c6-4ab4-bb3c-63a4b520ab2c.png)
 
-
+A API está disponibilizada publicamente para teste no link: [API](https://bank-marketing-data-app.herokuapp.com/)
 
 ## Referencias:
 
 [University of California, Irvine's website](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
 
-[Bank Marketing Data - A Decision Tree Approach] (https://www.kaggle.com/code/shirantha/bank-marketing-data-a-decision-tree-approach/notebook).
+[Bank Marketing Data - A Decision Tree Approach](https://www.kaggle.com/code/shirantha/bank-marketing-data-a-decision-tree-approach/notebook).
 
-[Repository for EEC1509, a graduate course on PPgEEC about Machine Learning] (https://github.com/ivanovitchm/ppgeecmachinelearning).
+[Repository for EEC1509, a graduate course on PPgEEC about Machine Learning](https://github.com/ivanovitchm/ppgeecmachinelearning).
