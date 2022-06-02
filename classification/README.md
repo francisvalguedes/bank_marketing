@@ -17,10 +17,10 @@ For the sake of understanding, a simple hyperparameter-tuning was conducted usin
 
 ## Intended Use
 This model is used in predicting the outcome of a banking marketing campaign, with an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
-1 - etl (fetch_data, eda, preprocessing)
-2 - data_check_segregation (data_check e data_segregation)
-3 - train
-4 - test
+ - etl (fetch_data, eda, preprocessing)
+ - data_check_segregation (data_check e data_segregation)
+ - train
+ - test
 
 ## Training Data
 
