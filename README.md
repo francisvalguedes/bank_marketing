@@ -47,8 +47,8 @@ The application uses the workflow shown in BigPicture below. Where is using the 
 
 ![image](https://user-images.githubusercontent.com/104702301/171174143-3cab4b4f-78c6-4ab4-bb3c-63a4b520ab2c.png)
 
-## A API
-A API está disponibilizada publicamente para teste no link: [API](https://bank-marketing-data-app.herokuapp.com/)
+## The API
+The API is publicly available to users at the link: [API](https://bank-marketing-data-app.herokuapp.com/)
 
 ## Referencias:
 
