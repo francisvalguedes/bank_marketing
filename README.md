@@ -38,6 +38,8 @@ Data attribute information:
 The classification goal is to predict if the client will subscribe (yes/no) a term deposit (variable y).
 
 ## Machine Learning Model
+The machine learning model implemented for prediction is the Decision Tree and is described in the link: [Model Cards](https://github.com/francisvalguedes/bank_marketing/tree/master/classification).
+
 
 ## Workflow
 
