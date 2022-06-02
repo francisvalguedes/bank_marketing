@@ -1,9 +1,10 @@
 # Bank Marketing Prediction - Decision Tree
-
-## Information
-Msc. Francisval Guedes, Msc. Hareton Gomes
-
 This work is part of the evaluation of theEEC1509 Machine Learning course of the Department of Computer Engineering and Automation Graduate Program in Electrical and Computer Engineering, Federal University of Rio Grande do Norte.
+
+### Team
+ - Supervisor: Prof. Dr. Ivanovitch (www.linkedin.com/in/ivanovitchm)
+
+ - Developers: Msc. Francisval Guedes ([www.linkedin.com/in/francisval](https://www.linkedin.com/in/francisval-guedes-soares-6094772a)), Msc. Hareton Gomes (www.linkedin.com/in/hareton).
 
 ## The data
 The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
@@ -45,6 +46,7 @@ The machine learning model implemented for prediction is the Decision Tree and i
 
 ![image](https://user-images.githubusercontent.com/104702301/171174143-3cab4b4f-78c6-4ab4-bb3c-63a4b520ab2c.png)
 
+## A API
 A API está disponibilizada publicamente para teste no link: [API](https://bank-marketing-data-app.herokuapp.com/)
 
 ## Referencias:
