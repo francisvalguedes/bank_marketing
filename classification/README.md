@@ -16,7 +16,7 @@ For the sake of understanding, a simple hyperparameter-tuning was conducted usin
 
 
 ## Intended Use
-This model is used as a proof of concept for the evaluation of an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
+This model is used in predicting the outcome of a banking marketing campaign, with an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
 1 - etl (fetch_data, eda, preprocessing)
 2 - data_check_segregation (data_check e data_segregation)
 3 - train
