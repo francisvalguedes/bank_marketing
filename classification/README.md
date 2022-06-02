@@ -47,8 +47,9 @@ The follow results will be shown:
 
  **Stage [Run]**                        | **Accuracy** | **F1** | **Precision** | **Recall** | 
 ---------------------------------|--------------|--------|---------------|------------|
- Train [chocolate-sweep-24](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/43pj5775/overview?workspace=user-francisvalfgs) | 0.8991       | 0.4695 | 0.6100        | 0.3816     |  
- Test [rich-bush-78](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8975       | 0.4466 | 0.6064        | 0.3535     |
+ Train [divine-oath-174](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/43pj5775/overview?workspace=user-francisvalfgs) | 0.8961       | 0.3524 | 0.6486        | 0.2419     |  
+ Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8961       | 0.345 | 0.6578        | 0.2338     |
+
 
 
 
