@@ -1,7 +1,4 @@
 # Model Card
-
-Model cards are a succinct approach for documenting the creation, use, and shortcomings of a model. The idea is to write a documentation such that a non-expert can understand the model card's contents. For additional information see the Model Card paper: https://arxiv.org/pdf/1810.03993.pdf
-
 ## Model Details
 Francisval Guedes and Hareton Gomes created a decision tree model based on Ivanovitch Silva's model. A complete data pipeline was built using Google Colab, Scikit-Learn and Weights & Bias to train a Decision Tree model. The big-picture of the data pipeline is shown below:
 
@@ -11,19 +8,19 @@ Francisval Guedes and Hareton Gomes created a decision tree model based on Ivano
 
 For the sake of understanding, a simple hyperparameter-tuning was conducted using a Random Sweep of Wandb, and the best hyperparameters values adopted in the train were:
 
-- full_pipeline__num_pipeline__num_transformer__model: 0
+- full_pipeline__num_pipeline__num_transformer__model: 1
 - classifier__criterion: 'entropy'
 - classifier__splitter: 'best'
 - classifier__random_state: 41
-- max_depth: 5
+- max_depth: 6
 
 
 ## Intended Use
-This model is used as a proof of concept for the evaluation of an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
-1 - etl (fetch_data, eda, preprocessing)
-2 - data_check_segregation (data_check e data_segregation)
-3 - train
-4 - test
+This model is used in predicting the outcome of a banking marketing campaign, with an entire data pipeline incorporating Machine Learning fundamentals. The data pipeline is composed of the following stages:
+ - etl (fetch_data, eda, preprocessing)
+ - data_check_segregation (data_check e data_segregation)
+ - train
+ - test
 
 ## Training Data
 
@@ -33,7 +30,7 @@ The marketing campaigns were based on phone calls. Often, more than one contact 
 
 You can download the data from the University of California, Irvine's [website](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
 
-After the EDA stage of the data pipeline, it was noted that the training data is imbalanced when considered the target variable and some features (``sex``, ``race`` and ``workclass``. 
+After the EDA stage of the data pipeline, it was noted that the training data is imbalanced when considered the target variable and some features as(``marital``, ``education``, ``default``, ``loan``, ``contact``)
 
 ## Evaluation Data
 The dataset under study is split into Train and Test during the ``Segregate`` stage of the data pipeline. 70% of the clean data is used to Train and the remaining 30% to Test. Additionally, 30% of the Train data is used for validation purposes (hyperparameter-tuning). 
@@ -50,12 +47,5 @@ The follow results will be shown:
  Train [divine-oath-174](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/43pj5775/overview?workspace=user-francisvalfgs) | 0.8961       | 0.3524 | 0.6486        | 0.2419     |  
  Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8961       | 0.345 | 0.6578        | 0.2338     |
 
-
-
-
-## Ethical Considerations
-
-We may be tempted to claim that this dataset contains the only attributes capable of predicting someone's income. However, we know that is not true, and we will need to deal with the class imbalances somehow.
-
 ## Caveats and Recommendations
-It should be noted that the model trained in this project was used only for validation of a complete data pipeline. It is notary that some important issues related to dataset imbalances exist, and adequate techniques need to be adopted in order to balance it.
+Some important issues related to dataset imbalances exist, and adequate techniques need to be adopted in order to balance it.

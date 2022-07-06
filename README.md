@@ -2,12 +2,14 @@
 This work is part of the evaluation of theEEC1509 Machine Learning course of the Department of Computer Engineering and Automation Graduate Program in Electrical and Computer Engineering, Federal University of Rio Grande do Norte.
 
 ### Team
- - Supervisor: Prof. Dr. Ivanovitch (www.linkedin.com/in/ivanovitchm)
+ - Supervisor: Prof. Ivanovitch (www.linkedin.com/in/ivanovitchm)
 
- - Developers: Msc. Francisval Guedes ([www.linkedin.com/in/francisval](https://www.linkedin.com/in/francisval-guedes-soares-6094772a)), Msc. Hareton Gomes (www.linkedin.com/in/hareton).
+ - Developers: Francisval Guedes ([www.linkedin.com/in/francisval](https://www.linkedin.com/in/francisval-guedes-soares-6094772a)), Hareton Gomes ([www.linkedin.com/in/hareton](https://www.linkedin.com/in/hareton-ribeiro-gomes-11123a238/)).
 
 ## The data
 The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
+
+![image](https://user-images.githubusercontent.com/104702301/171681331-db3da763-4572-4934-9137-5eb8ca21421a.png)
 
 You can download the data from the [University of California, Irvine's website](http://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
 
@@ -43,11 +45,13 @@ The machine learning model implemented for prediction is the Decision Tree and i
 
 
 ## Workflow
+The application uses the workflow shown in BigPicture below. Where is using the artifact stored by the classification model in Wandb and implemented an API from FastAPI. The API is tested with PyTest and deployed with Github Actions making it available on Heroku through automatic CI/CD.
 
-![image](https://user-images.githubusercontent.com/104702301/171174143-3cab4b4f-78c6-4ab4-bb3c-63a4b520ab2c.png)
+![WhatsApp Image 2022-06-03 at 14 38 17](https://user-images.githubusercontent.com/104702301/171921028-73b700cc-7902-4308-9a25-ee8e331bcf4f.jpeg)
 
-## A API
-A API está disponibilizada publicamente para teste no link: [API](https://bank-marketing-data-app.herokuapp.com/)
+
+## The API
+The API is publicly available to users at the link: [API](https://bank-marketing-data-app.herokuapp.com/)
 
 ## Referencias:
 
