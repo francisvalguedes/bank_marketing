@@ -54,9 +54,9 @@ The following results will be shown for the data with the unbalanced output clas
 The following results will be shown for the data with the balanced (60%) output class:
  **Stage [Run]**                        | **Accuracy** | **F1** | **Precision** | **Recall** | 
 ---------------------------------|--------------|--------|---------------|------------|
- Train [divine-oath-174](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/2p32v2ub/overview?workspace=user-francisvalfgs) | 0.8819       | 0.8461 | 0.8275        | 0.8656     |  
- Val [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/2p32v2ub/overview?workspace=user-francisvalfgs)  | 0.8461       | 0.5366 | 0.4266        | 0.7230     |
- Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/25brchwz/overview?workspace=user-francisvalfgs)  | 0.8447       | 0.5178 | 0.4066        | 0.7126     |
+ Train [floral-breeze-87](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/2p32v2ub/overview?workspace=user-francisvalfgs) | 0.8819       | 0.8461 | 0.8275        | 0.8656     |  
+ Val [floral-breeze-87](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/2p32v2ub/overview?workspace=user-francisvalfgs)  | 0.8461       | 0.5366 | 0.4266        | 0.7230     |
+ Test [confused-glitter-85](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/25brchwz/overview?workspace=user-francisvalfgs)  | 0.8447       | 0.5178 | 0.4066        | 0.7126     |
 
 
 
