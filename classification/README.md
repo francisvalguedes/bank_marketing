@@ -51,5 +51,3 @@ The follow results will be shown:
  Train [divine-oath-174](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/43pj5775/overview?workspace=user-francisvalfgs) | 0.8961       | 0.3524 | 0.6486        | 0.2419     |  
  Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8961       | 0.345 | 0.6578        | 0.2338     |
 
-## Caveats and Recommendations
-Some important issues related to dataset imbalances exist, and adequate techniques need to be adopted in order to balance it.
