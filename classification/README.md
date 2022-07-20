@@ -44,10 +44,19 @@ In order to follow the performance of machine learning experiments, the project 
 
 To calculate the evaluations metrics is only necessary to run:
 
-The follow results will be shown:
+The following results will be shown for the data with the unbalanced output class:
 
  **Stage [Run]**                        | **Accuracy** | **F1** | **Precision** | **Recall** | 
 ---------------------------------|--------------|--------|---------------|------------|
  Train [divine-oath-174](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/43pj5775/overview?workspace=user-francisvalfgs) | 0.8961       | 0.3524 | 0.6486        | 0.2419     |  
  Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/mbpuwfbg/overview?workspace=user-francisvalfgs)  | 0.8961       | 0.345 | 0.6578        | 0.2338     |
+
+The following results will be shown for the data with the balanced (60%) output class:
+ **Stage [Run]**                        | **Accuracy** | **F1** | **Precision** | **Recall** | 
+---------------------------------|--------------|--------|---------------|------------|
+ Train [divine-oath-174](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/2p32v2ub/overview?workspace=user-francisvalfgs) | 0.8819       | 0.8461 | 0.8275        | 0.8656     |  
+ Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/2p32v2ub/overview?workspace=user-francisvalfgs)  | 0.8461       | 0.5366 | 0.4266        | 0.7230     |
+ Test [comic-dragon-175](https://wandb.ai/mlops_ivan/decision_tree_bank/runs/25brchwz/overview?workspace=user-francisvalfgs)  | 0.8447       | 0.5178 | 0.4066        | 0.7126     |
+
+
 
